@@ -1,0 +1,121 @@
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+    }
+
+    .header {
+        background-color: red;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 15px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .logo {
+            max-width: 140px;
+            padding: 10px;
+        }
+
+    .top-bar h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .btn-atras {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      background-color: rgb(197, 195, 195);
+      color: rgb(197, 195, 195);
+      border: none;
+      padding: 6px 12px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+
+
+    .container {
+      max-width: 600px;
+      margin: 120px auto 40px;
+      padding: 20px;
+      background-color: rgb(238, 238, 238);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .btn-metodo {
+      width: 100%;
+      padding: 15px;
+      margin: 15px 0;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .btn-nequi,
+    .btn-tarjeta,
+    .btn-pago {
+      background-color: red;
+      color: white;
+    }
+
+    .seccion-pago {
+      display: none;
+      margin-top: 20px;
+    }
+
+    .alerta {
+      color: red;
+      display: none;
+      margin: 10px 0;
+    }
+
+    .qr-ejemplo {
+      width: 200px;
+      margin-top: 20px;
+    }
+
+    .banco-logos {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    .banco-logos img {
+      width: 120px;
+      margin: 10px;
+    }
+
+    .btn-pago {
+      padding: 10px 20px;
+      border: none;
+      margin-top: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .campo-tarjeta {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .error-input {
+      color: red;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .cuadro-producto {
+      background-color: #dddcdc;
+      padding: 10px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }

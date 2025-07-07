@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pasarela de Pago</title>
+  <link rel="stylesheet" href="Css/style.css">
+
+</head>
+<body>
+
+  <div class="header">
+        LSJ
+    </div>
+  <div class="header-container">
+
+        <img class="logo" src="imagenes/image.png" alt="Logo de la tienda">
+
+
+  <div class="container">
+    <button class="btn-metodo btn-nequi" onclick="mostrarSeccion('nequi')">Pagar con Nequi</button>
+    <button class="btn-metodo btn-tarjeta" onclick="mostrarSeccion('tarjeta')">Pagar con Tarjeta</button>
+
+    <div id="seccionNequi" class="seccion-pago">
+      <div class="cuadro-producto" id="cuadroProductoNequi">Producto seleccionado: <span id="productoNequi">Ninguno</span></div>
+      <p class="alerta" id="alertaProductoNequi">Selecciona un producto antes de continuar.</p>
+      <button class="btn-pago" onclick="generarQR()">Generar QR</button>
+      <div id="qrNequi" style="display:none;">
+        <img src="" class="qr" alt="QR Nequi">
+      </div>
+    </div>
+
+    <div id="seccionTarjeta" class="seccion-pago">
+      <div class="cuadro-producto" id="cuadroProductoTarjeta">Producto seleccionado: <span id="productoTarjeta">Ninguno</span></div>
+      <p class="alerta" id="alertaProductoTarjeta">Selecciona un producto antes de continuar.</p>
+
+      <input type="text" class="campo-tarjeta" id="nombreTitular" placeholder="Nombre del titular">
+      <div class="error-input" id="errorNombre"></div>
+
+      <input type="text" class="campo-tarjeta" id="numeroTarjeta" placeholder="Número de tarjeta">
+      <div class="error-input" id="errorNumero"></div>
+
+      <input type="text" class="campo-tarjeta" id="fechaVencimiento" placeholder="Fecha de vencimiento (MM/AA)">
+      <div class="error-input" id="errorFecha"></div>
+
+      <input type="text" class="campo-tarjeta" id="cvv" placeholder="CVV">
+      <div class="error-input" id="errorCVV"></div>
+
+      <button class="btn-pago" onclick="irAlCheckout()">Pagar</button>
+
+      <div id="bancos" class="banco-logos">
+        <img src="imagenes/Bancolombia.png" alt="Bancolombia">
+        <img src="imagenes/BBVA.png" alt="BBVA">
+        <img src="imagenes/Falabella.svg.png" alt="Falabella">
+      </div>
+    </div>
+  </div>
+<script src="js/pasarela.js"></script>
+</body>
+</html>
