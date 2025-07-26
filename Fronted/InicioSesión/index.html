@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión - NortSteak</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <img src="logo.png" alt="NortSteak Logo" class="logo">
+    <nav class="menu">
+      <i class="fa-solid fa-newspaper"></i>
+      <i class="fa-solid fa-user"></i>
+      <i class="fa-solid fa-cart-shopping"></i>
+    </nav>
+  </header>
+
+  <main class="container">
+    <form class="form">
+      <h1 class="title">INICIAR SESIÓN</h1>
+
+      <div class="input-group">
+        <input type="text" placeholder="Usuario" id="username">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+
+      <div class="input-group">
+        <input type="password" placeholder="Contraseña" id="loginPassword">
+        <i class="fa-solid fa-eye" id="toggleLoginPassword"></i>
+      </div>
+
+      <button type="submit" class="btn">ACCEDER</button>
+
+      <p class="register-link">¿Es nuevo usuario en NortSteak?<br> 
+        <a href="#">Crear una cuenta</a></p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
