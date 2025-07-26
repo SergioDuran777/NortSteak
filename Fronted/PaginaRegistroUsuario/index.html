@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro NortSteak</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <img src="logo.png" alt="NortSteak Logo" class="logo">
+    <nav class="menu">
+      <i class="fa-solid fa-newspaper"></i>
+      <i class="fa-solid fa-user"></i>
+      <i class="fa-solid fa-cart-shopping"></i>
+    </nav>
+  </header>
+
+  <main class="container">
+    <form class="form">
+      <h1 class="title">CREAR CUENTA</h1>
+      <a href="#" class="login-link">o Iniciar Sesión</a>
+
+      <div class="input-group">
+        <input type="text" placeholder="Nombre">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="input-group">
+        <input type="text" placeholder="Apellidos">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="input-group">
+        <input type="email" placeholder="Dirección de correo electrónico">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <div class="input-group">
+        <input type="password" placeholder="Contraseña" id="password1">
+        <i class="fa-solid fa-eye" id="togglePassword"></i>
+      </div>
+      <div class="input-group">
+        <input type="password" placeholder="Confirmar contraseña" id="password2">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+
+      <p id="message"></p>
+      <p class="forgot">Olvidaste Tu Contraseña <a href="#">Click Aqui</a></p>
+      <button type="submit" class="btn">CREAR CUENTA</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
